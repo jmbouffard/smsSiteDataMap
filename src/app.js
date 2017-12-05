@@ -1,9 +1,9 @@
 /* global window */
 import React, {Component} from 'react';
 import MapGL from 'react-map-gl';
-//import taxiData from '../../../data/taxi';
-//import wsData from '../../../data/WS_Stations';
-import wsData from '../../../data/Site_Data_QC_ON';
+//import taxiData from '../data/taxi';
+//import wsData from '../data/WS_Stations';
+import wsData from '../data/Site_Data_QC_ON';
 import DeckGLOverlay from './deckgl-overlay';
 import {LayerControls, HEXAGON_CONTROLS} from './layer-controls';
 import Charts from './charts';
