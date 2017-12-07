@@ -1,13 +1,10 @@
-This is a minimal standalone version of the ArcLayer example
-on [deck.gl](http://deck.gl) website.
+A prototype using deck.gl and Mapbox GL to map Site data from the http://sms-sgs.ic.gc.ca/ portal.
+It is based on the tutorial provided by [VIS-ACADEMY](http://vis.academy/#/).
 
 ### Usage
-Copy the content of this folder to your project. Run
+Install Node.js. Clone the repository. Run
 ```
 npm install
 npm start
 ```
 
-### Data format
-Sample data is stored in the `data` folder. To use your own data, checkout
-the [documentation of ArcLayer](../../docs/layers/arc-layer.md).

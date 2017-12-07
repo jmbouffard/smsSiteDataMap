@@ -1,6 +1,6 @@
 {
   "name": "smsSiteDataMap",
-  "description": "",
+  "description": "A prototype using deck.gl and Mapbox GL to map Site data from the http://sms-sgs.ic.gc.ca/ portal",
   "repository": {
     "type": "git",
     "url": "https://github.com/jmbouffard/smsSiteDataMap.git"
@@ -8,18 +8,11 @@
   "version": "0.1.0",
   "main": "index.html",
   "scripts": {
-    "start": "ocular start",
-    "build": "ocular build && rm -rf docs && mv dist docs",
-    "lint": "ocular lint",
-    "dev-start-local": "webpack-dev-server --env.local --progress --hot --port 3030 --open",
-    "dev-start": "webpack-dev-server --progress --hot --port 3030 --open",
-    "dev-build": "NODE_ENV=production webpack --env.prod=true"
+    "start-local": "webpack-dev-server --env.local --progress --hot --port 3030 --open",
+    "start": "webpack-dev-server --progress --hot --port 3030 --open",
+    "build": "NODE_ENV=production webpack --env.prod=true"
   },
   "dependencies": {
-    "@turf/turf": "^4.7.3",
-    "autobind-decorator": "^2.1.0",
-    "d3-force": "^1.0.6",
-    "ocular": "^0.2.16",
     "deck.gl": "^4.1.0",
     "immutable": "^3.8.1",
     "luma.gl": "^4.0.1",
@@ -33,7 +26,5 @@
     "buble-loader": "^0.4.0",
     "webpack": "^2.2.0",
     "webpack-dev-server": "^2.2.0"
-  },
-  "license": "MIT",
-  "private": true
+  }
 }

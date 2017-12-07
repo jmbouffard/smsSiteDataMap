@@ -1,0 +1,28 @@
+{
+  "name": "vis-tutorials",
+  "description": "A set of Uber Visualization tutorials",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uber-common/vis-academy.git"
+  },
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "ocular start",
+    "build": "ocular build && rm -rf docs && mv dist docs",
+    "lint": "ocular lint"
+  },
+  "dependencies": {
+    "@turf/turf": "^4.7.3",
+    "autobind-decorator": "^2.1.0",
+    "d3-force": "^1.0.6",
+    "deck.gl": "^4.1.1",
+    "luma.gl": "^4.0.1",
+    "ocular": "^0.2.16",
+    "react-map-gl": "^3.0.4",
+    "react-vis": "^1.7.2",
+	"mapbox-gl": "^0.42.2"
+  },
+  "license": "MIT",
+  "private": true
+}
