@@ -6,21 +6,23 @@
     "url": "https://github.com/jmbouffard/smsSiteDataMap.git"
   },
   "version": "0.1.0",
-  "main": "index.html",
+  "main": "./index.html",
   "scripts": {
-    "start-local": "webpack-dev-server --env.local --progress --hot --port 3030 --open",
-    "start": "webpack-dev-server --progress --hot --port 3030 --open",
-    "build": "NODE_ENV=production webpack --env.prod=true"
+    "wp-start-local": "webpack-dev-server --env.local --progress --hot --port 3030 --open",
+    "wp-start": "webpack-dev-server --progress --hot --port 3030 --open",
+    "wp-build": "NODE_ENV=production webpack --env.prod=true",
+    "start": "node server.js"
   },
   "dependencies": {
     "deck.gl": "^4.1.0",
+    "express": "^3.1.2",
     "immutable": "^3.8.1",
     "luma.gl": "^4.0.1",
+    "mapbox-gl": "^0.42.2",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-map-gl": "^3.0.4",
-    "react-vis": "^1.7.2",
-	"mapbox-gl": "^0.42.2"
+    "react-vis": "^1.7.2"
   },
   "devDependencies": {
     "buble-loader": "^0.4.0",
